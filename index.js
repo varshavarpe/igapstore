@@ -31,6 +31,13 @@ app.get("/", (req,res)=>{
 })
 app.use("/superadmin/igapproduct" , require("./routes/igapproduct"))
 
+app.use("/superadmin/state",require("./routes/states"))
+
+app.use("/superadmin/district",require("./routes/district"))
+
+app.use("/superadmin/taluka",require("./routes/taluka"))
+
+app.use("/superadmin/city",require("./routes/city"))
 
 const  PORT = process.env.PORT || 8081;
 
